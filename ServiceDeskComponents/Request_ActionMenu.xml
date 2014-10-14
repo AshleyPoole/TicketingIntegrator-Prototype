@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--$Id$--> 
+<!--
+    Document   : Request_ActionMenu.xml
+    Description:
+        Used to specify the external menu options that need to be displayed in the request details page.
+-->
+
+<menus>
+	<!--
+	Each action is indicated by a menu element.The "name" attribute should specify
+	a unique name to identify the menu. On completion of the action, if the 
+	request details page needs to be refreshed, then the "refresh" attribute 
+	should be set to true.
+    	-->	
+    	<menu name="Create_FobBugz_Case" refresh="true">
+	    	<!--
+		displaytext specifies the text that should be displayed in the menu's
+		available in the request details page. 
+		-->
+		<displaytext>Create FogBugz Case</displaytext>
+		<!--
+		The fully qualified class name for the implementation should be specified here.
+		-->     
+		<invoke>
+            		<class>com.servicedeskplus.integration.ScriptExecutor</class>
+        	</invoke>
+    	</menu>		
+</menus>

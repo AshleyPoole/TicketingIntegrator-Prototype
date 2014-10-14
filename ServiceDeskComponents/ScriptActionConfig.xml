@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : ScriptActionConfig.xml
+    Created on : May 3, 2013, 11:36 AM
+    Description:
+        The details of the action such as the http url to be accessed, the
+        request params that need to be passed to the TFS system, the response
+        that needs to be recorded in ServiceDesk Plus etc... will be specified
+        in this xml. This file should be present in the
+        [SDP Home]/server/default/conf directory.
+-->
+<script_config>
+<menu name="Create_FobBugz_Case">
+	<script>C:\TicketingIntegrator\TicketingIntegrator.exe $COMPLETE_JSON</script>
+	<dir>C:\TicketingIntegrator</dir>
+	<success>Unknown - The operation status was unknown.</success>
+	<notes>
+		<note>Should of run!</note>
+	</notes>
+</menu>
+</script_config>
